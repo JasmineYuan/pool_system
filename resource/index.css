@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+    position: relative;
+    overflow: visible;
+}
+.fa-chevron-left:before {
+    content: "<";
+}
+
+.fa-chevron-right:before {
+    content: ">";
+}
+
+#addUserDiv {
+    position: absolute;
+    right: 6%;
+    top: 35%;
+    width: 5%;
+}
+#addUserDiv img{
+    width: 100%;
+}
+
+#addUserDiv img:hover, #addUserForm img:focus{
+    cursor: pointer;
+}
+
+#addUserForm {
+    position: absolute;
+    width: 18em;
+    margin-top: 14px;
+    background: #fff;
+    font: 14px/1.55 "Roboto", Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    -o-box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    border: 5px solid #1abc9c;
+    z-index: 9999 !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    color: #666;
+    top: 60%;
+    right: 0;
+    display: none;
+}
+.comeout#addUserForm {
+    display: inherit;
+}
+#addUserForm input {
+    padding-left: 10px;
+    margin: 10px 10px 5px 10px;
+    display: block;
+    background: #fff;
+    position: relative;
+    vertical-align: top;
+    border: 2px solid #bdc3c7;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    color: #34495e;
+    outline: 0;
+    height: 35px;
+    width: 80%;
+    *zoom: 1
+}
+
+#addUserSubmit {
+    margin-bottom: 10px;
+    height: 30px;
+}
+#addUserForm input:hover,#addUserForm input:focus {
+    border-color: #62d0ba;
+}
+
+@media (max-width: 600px) {
+    #addUserDiv {
+        position: absolute;
+        right: 6%;
+        top: 70%;
+        width: 5%;
+    }
+    #addUserForm {
+        top :80%;
+    }
+
+}
